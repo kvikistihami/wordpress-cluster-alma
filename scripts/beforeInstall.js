@@ -122,6 +122,7 @@ if ('${settings.ls-addon:false}'== 'true') {
 
 resp.nodes.push({
   nodeType: "redis",
+  tag: "7.0.12-almalinux-9",
   count: 1,
   flexibleCloudlets: ${settings.st_flexibleCloudlets:16},
   fixedCloudlets: ${settings.st_fixedCloudlets:1},
