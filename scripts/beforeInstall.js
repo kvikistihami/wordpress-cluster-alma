@@ -97,7 +97,6 @@ if ('${settings.ls-addon:false}'== 'true') {
 } else {
   resp.nodes.push({
     nodeType: "nginx",
-    tag: "1.24.0-php-8.2.8-almalinux-9",
     count: ${settings.bl_count:2},
     flexibleCloudlets: ${settings.bl_flexibleCloudlets:8},
     fixedCloudlets: ${settings.bl_fixedCloudlets:1},
@@ -105,7 +104,7 @@ if ('${settings.ls-addon:false}'== 'true') {
     restartDelay: 10
   }, {
     nodeType: "nginxphp",
-    engine: "php8.1",
+    tag: "1.24.0-php-8.2.8-almalinux-9",
     count: ${settings.cp_count:2},
     flexibleCloudlets: ${settings.cp_flexibleCloudlets:8},                  
     fixedCloudlets: ${settings.cp_fixedCloudlets:1},
